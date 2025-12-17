@@ -1,0 +1,33 @@
+{
+  "name": "nextflix",
+  "version": "1.0.0",
+  "description": "Nextflix - Movie Discovery Web Application",
+  "private": true,
+  "scripts": {
+    "setup": "./setup-env.sh",
+    "backend:install": "cd backend && npm install",
+    "backend:dev": "cd backend && npm run start:dev",
+    "backend:build": "cd backend && npm run build",
+    "backend:start": "cd backend && npm run start:prod",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm start",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "build": "npm run backend:build && npm run frontend:build"
+  },
+  "keywords": [
+    "nextflix",
+    "movie",
+    "discovery",
+    "nextjs",
+    "nestjs"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
+
