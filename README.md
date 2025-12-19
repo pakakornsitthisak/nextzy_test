@@ -20,7 +20,7 @@
    npm install
 
    # Create .env.local file
-   echo "NEXT_PUBLIC_API_URL=http://localhost:3000" > .env
+   echo "NEXT_PUBLIC_API_URL=http://localhost:3000" > .env.local
    ```
 
 ### Running the Application
